@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*
+{
+
+    font-family: 'Poppins', sans-serif;
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+body{
+    background: lightblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1200px;
+    background: #fff; 
+    margin:50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow:0 35px 55px rgba(0,0,0,0.1)
+   
+    } 
+.container .leftside{
+    position: relative;
+    background: #003147;
+    padding:40px; 
+}
+
+.container .rightside
+{
+
+    position: relative;
+    background: #fff;
+    padding:40px;
+    
+}
+.profileText{
+position: relative;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom:1px solid white;
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height:200px;
+    border: radius 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.profileText h2{      
+      color:rgb(250, 245, 245);
+      font-size: 1.5em;
+      margin-top:20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 200;
+      line-height: 1.4em;
+      
+    }
+    .profileText span{
+        font-size: 0.7em;
+        font-weight: 300;
+
+    }
+    .contact{
+        padding-top:  40px;
+
+    }
+    .title1{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing:  1px;
+        font-weight:600;
+        text-align: center;
+        
+        }
+    .contact ul li{
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+      color: whitesmoke;
+        text-align: left;
+        cursor: pointer;
+    }
+    .contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+   font-size: 18px;
+    color: #03a9f0;;    
+    }
+    .contact ul li span{
+        color: #fff;
+        font-weight: 400;
+    }
+    .edu{
+        padding-top:  40px;
+
+    }
+    .title2{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing:  1px;
+        font-weight:600;
+        text-align: center;
+        
+        }
+    .edu ul li{
+        position: relative;
+        margin: 10px 0;
+      color: whitesmoke;
+        text-align: left;
+        cursor: pointer;
+    }
+    .edu ul li .icon{
+    display: inline-block;
+    width: 30px;
+   font-size: 18px;
+    color: #03a9f0;;    
+    }
+    .edu ul li h6{
+        color: aqua;
+    }
+
+    .edu ul li span{
+        color: #fff;
+        font-weight: 450;
+    }     
+.lang
+{
+
+    color: white;
+    text-transform: uppercase;
+    letter-spacing:  1px;
+    font-weight:600;
+    text-align: center;
+    list-style: square;
+    
+    
+}
+.lang .new{
+
+        font-weight: 400;
+        letter-spacing:1px;
+        text-align: left;
+}
+.about{
+margin-bottom: 50px;
+
+
+}
+.about:nth-last-child{
+
+margin-bottom: 0;
+}
+.me{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom:10px;
+    border-bottom:1px solid black;
+}
+.me2{
+    color:black;
+    font-weight: 600;
+    width:100%;
+   
+    
+}
+.abtskill .title4{
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+    border-bottom:1px solid black;}
+.box1{
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.soft h2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom:10px;
+    border-bottom:1px solid black;
+}
+.soft2{
+    color:black;
+    font-weight: 600;
+    width:100%;
+    
+}
+.hob{
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+}
+.hob3{
+    color:black;
+    font-weight: 600;
+    width:100%;
+}
+.last{
+    border-bottom:1px solid black;
+}
+    
+[class*="col-"] {
+    width: 100%;
+}
+  
+@media screen and (max-width: 1000px){
+    .container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .profileText {      
+        height: 150px; 
+    }
+}
