@@ -207,25 +207,29 @@ margin-bottom: 0;
     font-weight: 700;
     margin-bottom:10px;
     border-bottom:1px solid black;
+    
 }
 .soft2{
     color:black;
     font-weight: 600;
     width:100%;
-    
+       
 }
 .hob{
     position: relative;
     width: 100%;
-    align-items: flex-start;
+    list-style: none;
+   /*align-items: flex-start;*/
+   /* border-bottom:1px solid black;*/
 }
 .hob3{
     color:black;
     font-weight: 600;
     width:100%;
+   
 }
-.last{
-    border-bottom:1px solid black;
+/*.last{
+    border-bottom:1px solid black;*/
 }
     
 [class*="col-"] {
