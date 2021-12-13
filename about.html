@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: cadetblue;
+    }
+    .one{
+        align-items: center;
+        padding:100px;
+        display:flex ;
+    }
+
+    .main {
+            border: 5px solid #FFFF00;
+            display: flex;
+            justify-content: center;
+            padding:20px;
+} 
+
+    .main img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+
+    }
+    .one .main h2{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:xx-large;
+        font-weight: 400;
+        padding:20PX;
+    }
+    .one .main P{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    @media screen and (max-width:500px) {
+        .main{
+            grid-template-columns: 1 fr;
+            margin: 0;
+        }
+        /*.pic{
+            width: 100%;
+            height: auto;
+        }*/
+        
+    }
+</style>
+
+<body>
+    <div class="one">
+        <div class="main">
+            <img src="jerry5.jpg"class="pic" alt="this is jerry">
+           
+            <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also
+                make the website more & more interactive with web animations.   
+                design. I also make the website more & more interactive with web animations.A responsive design
+                makes
+                your website accessible to all users, regardless of their device</p>
+        </div>
+     
+    </div>
+</body>
+
+</html>
