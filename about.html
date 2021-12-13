@@ -1,77 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-</head>
-<style>
+  </head>
+  <style>
     * {
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     body {
-        background-color: cadetblue;
-    }
-    .one{
-        align-items: center;
-        padding:100px;
-        display:flex ;
+      background-color: cadetblue;
+      display: flex;
+      margin: 0;
+      min-height: 100vh;
+      padding: 40px;
     }
 
     .main {
-            border: 5px solid #FFFF00;
-            display: flex;
-            justify-content: center;
-            padding:20px;
-} 
+      border: 5px solid #ffff00;
+      align-content: center;
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 50px;
+    }
 
-    .main img {
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
+    .pic {
+      object-fit: cover;
+      max-width: 100%;
+    }
+  </style>
 
-    }
-    .one .main h2{
-        color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size:xx-large;
-        font-weight: 400;
-        padding:20PX;
-    }
-    .one .main P{
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    @media screen and (max-width:500px) {
-        .main{
-            grid-template-columns: 1 fr;
-            margin: 0;
-        }
-        /*.pic{
-            width: 100%;
-            height: auto;
-        }*/
-        
-    }
-</style>
+  <body>
+    <div class="main">
+      <img src="jerry5.jpg" class="pic" alt="this is jerry" />
 
-<body>
-    <div class="one">
-        <div class="main">
-            <img src="jerry5.jpg"class="pic" alt="this is jerry">
-           
-            <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also
-                make the website more & more interactive with web animations.   
-                design. I also make the website more & more interactive with web animations.A responsive design
-                makes
-                your website accessible to all users, regardless of their device</p>
-        </div>
-     
+      <p class="para">
+        I am a front-end web developer. I can provide clean code and pixel
+        perfect design. I also make the website more & more interactive with web
+        animations. design. I also make the website more & more interactive with
+        web animations.A responsive design makes your website accessible to all
+        users, regardless of their device
+      </p>
     </div>
-</body>
-
+  </body>
 </html>
